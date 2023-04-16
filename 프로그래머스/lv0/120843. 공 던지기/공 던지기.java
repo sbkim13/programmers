@@ -3,13 +3,6 @@ class Solution {
         int answer = 0;
         int idx = 2 * (k - 1);
         
-        if(idx > numbers.length) {
-            answer = numbers[idx % numbers.length];
-        }
-        else {
-            answer = numbers[idx];
-        }
-        
-        return answer;
+        return numbers[idx % numbers.length];
     }
 }
